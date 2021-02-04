@@ -1,4 +1,4 @@
-
+package Abstrakty;
 
 public abstract class Shape extends Object {
 
@@ -47,4 +47,6 @@ public abstract class Shape extends Object {
     public String getName(String name) {
         return name + ":Shape";
     }
+
+
 }

@@ -1,5 +1,8 @@
+package Abstrakty;
+
 public class Square extends Rectangle {
-    private double side ;
+    private double side;
+    //private double side ;
 
     public Square() {
 
@@ -16,26 +19,28 @@ public class Square extends Rectangle {
     }
 
     public double getSide() {
-        return side;
+        return super.length;
     }
 
     public void setSide(double side) {
-        this.side = side;
+        super.length = side;
+        super.width = side;
     }
 
 
     public String getName() {
         return "Square";
     }
-
-    @Override
+    public double getLength() {
+        return length;
+    }
     public void setWidth(double width) {
-        super.setWidth(width);
+        setSide(side);
     }
 
-    @Override
+
     public void setLength(double length) {
-        super.setLength(length);
+        setSide(side);
     }
 
     @Override

@@ -1,3 +1,5 @@
+package Abstrakty;
+
 public class Circle extends Shape {
 
     private double radius = 1.0;
@@ -7,7 +9,7 @@ public class Circle extends Shape {
 
     public Circle(double radius) {
     }
-    public Circle(double radius,Shape shape){
+    public Circle(double radius, Shape shape){
         this.radius = radius;
         this.shape = shape;
     }
